@@ -24,7 +24,6 @@ btn.addEventListener('click',()=>{
     getdata();
 })
 
-setInterval(getdata,10000);
 
 
 
