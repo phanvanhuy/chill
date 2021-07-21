@@ -1,6 +1,6 @@
 const content = document.querySelector('.content');
 const btn = document.querySelector('.btn');
-
+const x = document.querySelector('.kk');
 getdata();
 
 function getdata(){
@@ -16,11 +16,15 @@ function getdata(){
         content.innerHTML=dd.joke;
     });
 
+    x.style.backgroundColor = "#"+Math.floor(Math.random()*16777215).toString(16);
+
+
 }
 btn.addEventListener('click',()=>{
     getdata();
 })
 
 setInterval(getdata,10000);
+
 
 
